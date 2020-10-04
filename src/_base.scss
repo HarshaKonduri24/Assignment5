@@ -1,0 +1,25 @@
+/* ! BASIC STYLES */
+
+body {
+    font-family: $f-body;
+    line-height: 2em;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 0;
+    background: url(#{$image-loc}/bg.gif) $white repeat-x;
+}
+
+main {
+    width: 940px;
+    @include margins(0 auto);
+    padding: 0 10px;
+    @include break(959px) {
+        width: 80/100 * 959px;
+    }
+    @include break(767px) {
+        width: 60/100 * 767px;
+    }
+    @include break(459px) {
+        width: 65/100 * 459px;
+    }
+}
